@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 285b25f6adfab3a419cda8e97e98d266
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gate: {instanceID: 0}
+  - cannonBall: {fileID: 730480342239027465, guid: 3af5154bb7e9e70428eab832523f66e1, type: 3}
+  - flamingCannonBall: {fileID: 730480342239027465, guid: 2e363429d1887434a845db3a2662636d, type: 3}
+  - coconut: {fileID: 730480342239027465, guid: 061579433097b534d903739f1a6d8511, type: 3}
+  - bone: {fileID: 730480342239027465, guid: adeb2e4551051b5429c9a39b8fb249b0, type: 3}
+  - handCuffs: {fileID: 730480342239027465, guid: ab7374cd4a8afb846875ffa9c3e93543, type: 3}
+  - parrot1: {fileID: 730480342239027465, guid: 406e2eebffc506340afbfb491cd5302f, type: 3}
+  - parrot2: {fileID: 730480342239027465, guid: 4d210250f722a894ab27434d4efe0890, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
