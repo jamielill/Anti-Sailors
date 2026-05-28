@@ -47,7 +47,7 @@ public class PlayerManager : MonoBehaviour
     private void FixedUpdate() 
     {
 		Vector2 movementVector = new Vector2(currentDirection.x, currentDirection.y).normalized;
-        rb.velocity = movementVector * speed;
+        rb.linearVelocity = movementVector * speed;
     }
 
     public void TakeDamage(int amount)
@@ -87,6 +87,6 @@ public class PlayerManager : MonoBehaviour
     {
         Rigidbody2D shot = Instantiate(cannonBall, transform.position + new Vector3(0.5f * savedDirection.x, 0.5f * savedDirection.y), transform.rotation);
         shot.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-        shot.velocity = new Vector3(savedDirection.x, savedDirection.y, 0f) * cannonBallSpeed;
+        shot.linearVelocity = new Vector3(savedDirection.x, savedDirection.y, 0f) * cannonBallSpeed;
     }
 }

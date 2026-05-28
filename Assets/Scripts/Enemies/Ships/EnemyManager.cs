@@ -66,7 +66,7 @@ public abstract class EnemyManager : MonoBehaviour
 
     protected void FixedUpdate() 
     {
-        rb.velocity = new Vector2(horizDirection * speed, vertDirection * speed);
+        rb.linearVelocity = new Vector2(horizDirection * speed, vertDirection * speed);
     }
 
     // attacking
@@ -85,7 +85,7 @@ public abstract class EnemyManager : MonoBehaviour
         Rigidbody2D shot;
         shot = Instantiate(activeProjectile, transform.position + new Vector3(0.5f*horizDirection, 0.5f*vertDirection, 0f), transform.rotation);
         shot.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-        shot.velocity = new Vector3(horizDirection, vertDirection, 0f) * projectileSpeed;
+        shot.linearVelocity = new Vector3(horizDirection, vertDirection, 0f) * projectileSpeed;
         readyToFire = false;
         StartCoroutine(Reload());
     }
